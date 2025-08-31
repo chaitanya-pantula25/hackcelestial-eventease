@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EventEase – Sign Up</title>
+  <link rel="stylesheet" href="p2.css" />
+</head>
+<body>
+  <main class="centered">
+    <section id="signup">
+      <div class="card card-lg">
+        <h1 class="title">Create Account</h1>
+        <p class="muted">Sign up to join HackCelestial</p>
+        <form id="signupForm" class="stack">
+          <label class="input">
+            <span>Name</span>
+            <input type="text" id="signupName" placeholder="Your full name" required />
+          </label>
+          <label class="input">
+            <span>Email</span>
+            <input type="email" id="signupEmail" placeholder="you@example.com" required />
+          </label>
+          <label class="input">
+            <span>Password</span>
+            <input type="password" id="signupPassword" placeholder="••••••••" required minlength="4"/>
+          </label>
+          <button class="btn primary" type="submit">Sign Up</button>
+        </form>
+        <p class="tiny center">Already have an account?
+          <a href="login.html" class="btn ghost">Login</a>
+        </p>
+      </div>
+    </section>
+  </main>
+  <div id="toast" class="toast hidden"></div>
+  <script src="p2.js"></script>
+</body>
+</html>
